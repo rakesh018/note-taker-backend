@@ -11,6 +11,10 @@ const client = require("./configs/db");
 
 app.use("/auth", authRoutes);
 app.use("/notes",notesRoutes);
+app.get("/health",(req,res)=>{
+  return res.send(200).send("Server is healthy.");
+  //this is to check health of server
+})
 //connecting database
 client.connect((err) => {
   if (err) {
