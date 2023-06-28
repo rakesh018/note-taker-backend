@@ -1,5 +1,1 @@
-->This is the full backend code of my 'My note taker' web application built using Express.js, Node.js, and PostgreSQL.
-->Configs folder is responsible for setting up the connection to database.
-->Controllers folder have all logic/functions for my application.
-->Middlewares folder contains logic of middlewares and used wherever they are necessary.
-->You can just take a look at my routes folder to get an idea about what are all the endpoints in my application.
+
