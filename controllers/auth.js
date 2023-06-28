@@ -1,30 +1,6 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const client = require("../configs/db");
-/*
-const temporaryData = [
-  {
-    name: "Rakesh",
-    email: "rakhibodapatla@gmail.com",
-    password: "$2b$10$cYh0nUOM2caEwKwIkrtBg.LZoLKL4dzgzyuEKncTKor7dL4juTUJm",
-  },
-  {
-    name: "Pranay",
-    email: "pranay@gmail.com",
-    password: "$2b$10$cYh0nUOM2caEwKwIkrtBg.LZoLKL4dzgzyuEKncTKor7dL4juTUJm",
-  },
-  {
-    name: "Sumeet",
-    email: "sumeet@gmail.com",
-    password: "$2b$10$cYh0nUOM2caEwKwIkrtBg.LZoLKL4dzgzyuEKncTKor7dL4juTUJm",
-  },
-  {
-    name: "random",
-    email: "random@gmail.com",
-    password: "$2b$10$cYh0nUOM2caEwKwIkrtBg.LZoLKL4dzgzyuEKncTKor7dL4juTUJm",
-  },
-];
-*/
 exports.signUp = (req, res) => {
   //we are going to get a request from frontend with body like given below
   /*{
